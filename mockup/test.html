@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Car</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.php?controller=homepage&action=index&">Edmund Cars</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                                    <li><a href="index.php?controller=vehicle&action=add&">Add Car</a></li>
+                    <li><p class="navbar-text">Krutarth Joshi</p></li>
+                    <li><a href="index.php?controller=homepage&action=logout&">Logout</a></li>
+                            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<div class="container">
+        <form class="form-signin" method="post" action="index.php?controller=vehicle&action=add&">
+    <h2 class="form-signin-heading">Add Car</h2>
+    <label for="inputVIN" class="sr-only">VIN</label>
+
+    <div class="form-group">
+        <input type="text" id="inputVIN" class="form-control" name="Vehicle[VIN]" placeholder="VIN"
+               value="">
+
+        <div class="alert alert-danger hide vehicle-not-found">Please enter correct VIN.</div>
+        <a href="#" class="btn btn-success vin-test">Vin Test</a>
+    </div>
+    <label for="inputYear" class="sr-only">Year</label>
+    <input type="text" id="inputYear" class="form-control" name="Vehicle[Year]" placeholder="Year"
+           value="" required>
+    <label for="inputMake" class="sr-only">Make</label>
+    <input type="text" id="inputMake" class="form-control" name="Vehicle[Make]" placeholder="Make"
+           value="" required>
+    <label for="inputModel" class="sr-only">Model</label>
+    <input type="text" id="inputModel" class="form-control" name="Vehicle[Model]" placeholder="Model"
+           value="" required>
+    <label for="inputModel" class="sr-only">Condition</label>
+    <select type="text" id="inputCondition" class="form-control" name="Vehicle[Condition]" placeholder="Condition"
+            required>
+                    <option
+                value="1"  >New</option>
+                    <option
+                value="2"  >Used</option>
+            </select>
+    <input type="hidden" id="inputPhoto" class="form-control" name="Vehicle[Photo]" value="">
+
+    <div class="photo-block">
+            </div>
+    <label for="inputPrice" class="sr-only">Price</label>
+    <input type="text" id="inputPrice" class="form-control" name="Vehicle[Price]" value=""
+           placeholder="Price">
+    <p class="honeypot-block" id="pot">
+                    <label>If you're human leave this blank:</label>
+                    <input name="honeypot" type="text" id="honeypot" class="honeypot" />
+                </p>    <input type="hidden" name="csrf" value="16b56257b02de569bf81f58b21e6efb4" />    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+</form></div>
+
+<script src="assets/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
