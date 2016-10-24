@@ -19,43 +19,85 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
 </head>
+<!--Navigation-->
+    <header>
 
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar primary-color">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand
+                    <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
+                    <!--Links-->
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cars.html">Our Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scheduler.html">Schedule an Appointment</a>
+                        </li>
+						            <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--/.Collapse content-->
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+    <!--/Navigation-->
 <!--Form with header-->
-<div class="card">
-    <div class="card-block">
+<body id= "container">
+	<div class="card">
+		<div class="card-block">
 
-        <!--Header-->
-        <div class="form-header blue light-4 text-xs-center">
-            <h3><i class="fa fa-user"></i> Register:</h3>
-        </div>
-		<a href="index.html" class="btn btn-primary" role="button">HOME</a>
-        <!--Body-->
-        <div class="md-form">
-            <i class="fa fa-user prefix"></i>
-            <input type="text" id="form3" class="form-control">
-            <label for="form3">Your name</label>
-        </div>
-        <div class="md-form">
-            <i class="fa fa-envelope prefix"></i>
-            <input type="text" id="form2" class="form-control">
-            <label for="form2">Your email</label>
-        </div>
+			<!--Header-->
+			<div class="text-xs-center">
+				<h3><i class="fa fa-user"></i> Register:</h3>
+			</div>
+			<!--Body-->
+			<div class="md-form">
+				<i class="fa fa-user prefix"></i>
+				<input type="text" id="form3" class="form-control">
+				<label for="form3">Your name</label>
+			</div>
+			<div class="md-form">
+				<i class="fa fa-envelope prefix"></i>
+				<input type="text" id="form2" class="form-control">
+				<label for="form2">Your email</label>
+			</div>
 
-        <div class="md-form">
-            <i class="fa fa-lock prefix"></i>
-            <input type="password" id="form4" class="form-control">
-            <label for="form4">Your password</label>
-        </div>
+			<div class="md-form">
+				<i class="fa fa-lock prefix"></i>
+				<input type="password" id="form4" class="form-control">
+				<label for="form4">Your password</label>
+			</div>
 
-        <div class="text-xs-center">
-            <button class="btn btn-primary">Sign UP</button>
-        </div>
+			<div class="text-xs-center">
+				<button class="btn btn-primary">Sign UP</button>
+			</div>
 
-    </div>
-</div>
+		</div>
+	</div>
+</body>
 <!--/Form with header-->
 <!--Footer-->
     <div class="modal-footer">

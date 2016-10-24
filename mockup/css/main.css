@@ -54,3 +54,16 @@ h3 {
   font-size: 0.75em;
   color: #bdc3c7;
 }
+#container{
+  margin-top: 70px;
+}
+.img{
+  /*padding-left: 30px;*/
+  height: 300px;
+  /*width: 350px;*/
+}
+
+.dbutton{
+  padding-bottom: 10px;
+  position: relative;
+}
