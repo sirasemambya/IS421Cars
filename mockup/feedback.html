@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Material Design Bootstrap</title>
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -21,9 +21,10 @@
     <!-- Your custom styles (optional) -->
     <link href="css/main.css" rel="stylesheet">
 
+<title>ABC Cars</title>
 </head>
 
-<body id="container">
+<body class="centercard">
   <header>
 
       <!--Navbar-->
@@ -56,6 +57,15 @@
                       <li class="nav-item">
                           <a class="nav-link" href="feedback.html">Feedback</a>
                       </li>
+                      <li class="nav-item">
+
+
+                           <a class="nav-link" href="beginsale.html">Begin a Sale</a>
+
+
+
+
+                        </li>
 
                   </ul>
                 <ul class="nav navbar-nav nav-flex-icons">
@@ -82,46 +92,36 @@
     </div>
 
     <!--Body-->
-    <p>You can provide your feedback/review using this form.</p>
-    <br>
 
-    <!--Body-->
-    <div class="md-form">
-        <i class="fa fa-user prefix"></i>
-        <input type="text" id="form3" class="form-control">
-        <label for="form3">Your name</label>
-    </div>
 
-    <div class="md-form">
-        <i class="fa fa-envelope prefix"></i>
-        <input type="text" id="form2" class="form-control">
-        <label for="form2">Your email</label>
-    </div>
 
-    <div class="md-form">
-        <i class="fa fa-tag prefix"></i>
-        <input type="text" id="form32" class="form-control">
-        <label for="form34">Subject</label>
-    </div>
+<label for="reason">Reason for Feedback:</label>
+  <select class="form-control" id="sel1">
 
-    <div class="md-form">
-        <i class="fa fa-pencil prefix"></i>
-        <textarea type="text" id="form8" class="md-textarea"></textarea>
-        <label for="form8">feedback</label>
-    </div>
+    <option>Customer Service Review</option>
+     <option>Car Repair</option>
+    <option>Car Just Isn't For Me</option>
+    <option>Car Fault</option>
 
-    <div class="text-xs-center">
-        <a href="success_feed.html" button class="btn btn-primary">Submit</button></a>
+    <option>Other</option>
+  </select>
+     <br>
 
-        <div class="call">
-            <br>
-            <p>Or would you prefer to call?
-                <br>
-                <span><i class="fa fa-phone"> </i></span> (999)000-1111</p>
-        </div>
-    </div>
-
+    <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
 </div>
+
+
+    <center>
+
+
+<a href="thankyouf.html" class="btn btn-danger" role="button">Submit</a>
+</center>
+
+
+
+
 <!--Form-->
 
 

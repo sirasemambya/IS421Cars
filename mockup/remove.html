@@ -30,9 +30,7 @@
     </style>
 
 
-</head>
 
-<body class="centercard">
     <!-- /Start your project here-->
 	<!--Navigation-->
     <header>
@@ -65,16 +63,22 @@
                             <a class="nav-link" href="scheduler.html">Schedule an Appointment</a>
                         </li>
 						            <li class="nav-item">
-                            <a class="nav-link" href="feedback.html">Feedback</a>
+                            <a class="nav-link" href="view_feedback.html">View Feedback</a>
+                        </li>
+                          <li class="nav-item">
+                          
+                            
+                           <a class="nav-link" href="beginsale.html">Begin a Sale</a>
+                        
+       
+                            
+                            
                         </li>
 
                     </ul>
                   <ul class="nav navbar-nav nav-flex-icons">
           						<li class ="nav-link nav-item">
-          							<a href="signin.html"><i class="fa fa-sign-in"></i> Sign IN</a>
-          						</li>
-          						<li class="nav-link nav-item" >
-          						<a href="signup.html"><i class="fa fa-key"></i> Sign UP</a>
+          							<a href="signin.html"><i class="fa fa-sign-out"></i> Log out(admin)</a>
           						</li>
           				</ul>
                 </div>
@@ -87,67 +91,65 @@
 
 
 
-<h2 class="w3-center">Automatic Slideshow</h2>
 
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides img" src="img/cars/buggati.jpg" style="width:100%">
-  <img class="mySlides img" src="img/cars/6985.jpg" style="width:100%">
-  <img class="mySlides img" src="img/cars/accord-1.jpg" style="width:100%">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<br />
+<br />
+<br />
+
+<center>
+ 
+  <a href="newsale.html" class="btn btn-danger" role="button"><h3>Begin a New Sale</h3></a>
+  
+</center>
+
+<br>
+<br>
+ 
+ <div class="container">
+  
+  <table class="table">
+   
+
+    <tbody>
+      <tr class="car1">
+        <td><img src="img/cars/hondacivic.jpg" class="img-rounded" alt="Honda Civic"></td>
+        <td>Car1</td>
+        <td>
+         <a href="continue.html" class="btn btn-info btn-md" role="button">Continue Sale</a>
+        <a href="remove.html" class="btn btn-info btn-md" role="button">Remove Sale</a>
+        </td>
+      </tr>
+      <tr class="car2">
+        <td><img src="img/cars/hondacivic.jpg" class="img-rounded" alt="Honda Civic"></td>
+        <td>Car2</td>
+        <td>
+         <a href="continue.html" class="btn btn-info btn-md" role="button">Continue Sale</a>
+        <a href="remove.html" class="btn btn-info btn-md" role="button">Remove Sale</a>
+        </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
 </div>
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
-<h1>Best Sellers</h1>
-<div class="card-deck-wrapper">
-  <div class="card-deck">
-  <div class="card">
-    <img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
-    <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
-    <a class="btn btn-primary dbutton" href="deatils.html" role="button">Details</a>
-  </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
-    <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <a class="btn btn-primary dbutton" href="deatils.html" role="button">Details</a>
-  </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
-    <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <a class="btn btn-primary" href="deatils.html" role="button">Details</a>
-    </div>
-  </div>
-  </div>
-</div>
-<!--Footer-->
-
-<!--/.Footer-->
 
 
 
-
+        
+        
+        
+        
+	</body>
     <!-- SCRIPTS -->
 
     <!-- JQuery -->

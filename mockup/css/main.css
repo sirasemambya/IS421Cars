@@ -1,15 +1,11 @@
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
+
 
 a {
   text-decoration: none;
 }
 
 img{
-  max-width: 100%;
+  max-width: 90%;
 }
 
 h3 {
@@ -66,4 +62,14 @@ h3 {
 .dbutton{
   padding-bottom: 10px;
   position: relative;
+}
+
+
+.centercard{
+ padding-top: 50px;
+  margin: 0 auto;
+  width: 960px;
+}
+.incard{
+  height: 30px;
 }
