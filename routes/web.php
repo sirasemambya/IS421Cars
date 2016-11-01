@@ -20,3 +20,4 @@ Route::get('/feedback','PagesController@feedback');
 Route::get('/signin','PagesController@signin');
 Route::get('/signup','PagesController@signup');
 Route::get('/subscribe','PagesController@subscribe');
+Route::get('/sale','PagesController@sale');

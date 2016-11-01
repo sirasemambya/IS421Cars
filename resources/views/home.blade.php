@@ -1,14 +1,14 @@
 @extends('bootstrap')
 @section('home_slider')
 <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top:40px;">
     <!--Indicators-->
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-2" data-slide-to="1"></li>
         <li data-target="#carousel-example-2" data-slide-to="2"></li>
-		<li data-target="#carousel-example-2" data-slide-to="3"></li>
-		<li data-target="#carousel-example-2" data-slide-to="4"></li>
+	<li data-target="#carousel-example-2" data-slide-to="3"></li>
+	<li data-target="#carousel-example-2" data-slide-to="4"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -18,14 +18,14 @@
         <div class="carousel-item active">
             <!--Mask color-->
             <div class="view hm-black-slight">
-                <img src="img/cars/americancars.jpg" class="img-fluid" alt="all American">
+                <img src="img/cars/buggati.png" class="img-fluid" alt="all American">
                 <div class="full-bg-img">
                 </div>
             </div>
             <!--Caption-->
             <div class="carousel-caption">
                 <div class="animated fadeInDown">
-                    <h3 class="h3-responsive">All American Brands</h3>
+                    <h3 class="h3-responsive">Exotic cars</h3>
                 </div>
             </div>
             <!--Caption-->
@@ -54,7 +54,7 @@
         <div class="carousel-item">
             <!--Mask color-->
             <div class="view hm-black-slight">
-                <img src="img/cars/buycars.jpg" class="img-fluid" alt="we buy cars">
+                <img src="img/cars/buycars.png" class="img-fluid" alt="we buy cars">
                 <div class="full-bg-img">
                 </div>
             </div>
@@ -124,7 +124,7 @@
 	<div class="card-deck-wrapper">
 		<div class="card-deck">
 			<div class="card">
-			<img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
+			<img class="card-img-top img" src="img/cars/buggati.png" alt="No Cars Photos">
 				<div class="card-block">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="card">
-			<img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
+			<img class="card-img-top img" src="img/cars/buggati.png" alt="No Cars Photos">
 				<div class="card-block">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -140,7 +140,7 @@
 				</div>
 			</div>
 			<div class="card">
-			<img class="card-img-top img" src="img/cars/buggati.jpg" alt="No Cars Photos">
+			<img class="card-img-top img" src="img/cars/buggati.png" alt="No Cars Photos">
 				<div class="card-block">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

@@ -70,3 +70,6 @@ h3 {
 body{
 	background-color: #e8e8e8;
 }
+.carousel-inner > .carousel-item > .view > img {
+    margin: 0 auto;
+}
