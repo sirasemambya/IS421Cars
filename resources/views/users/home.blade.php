@@ -123,10 +123,10 @@
 	<h1 style="text-align:center">Best Sellers</h1>
 	<h3 style="text-align:center">Welcome, {{ $firstName . " " . $lastName }}</h3>
 
-	@if(\Auth::user()->hasRole('admin'))
-		<br>
-		@include('admin.users')
-	@endif
+    @role('admin')
+        <br>
+        @include('admin.users')
+    @endrole
 
 	<br>
 
