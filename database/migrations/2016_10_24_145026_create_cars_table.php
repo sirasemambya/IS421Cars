@@ -14,7 +14,6 @@ class CreateCarsTable extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->string('vin')->unique();
-            $table->string('username');
             $table->string('year');
             $table->string('make');
             $table->string('model');
@@ -22,9 +21,6 @@ class CreateCarsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('cars', function($table){
-            $table->foreign('username')->references('username')->on('users');
-        });
     }
 
     /**

@@ -14,7 +14,6 @@ class CarTableSeeder extends Seeder
     {
         Car::create([
         	'vin' => 'ad8f93fjjjfj3w98',
-        	'username' => 'sl597',
         	'year' => '2001',
         	'make' => 'ford',
         	'model' => 'focus',
@@ -23,7 +22,6 @@ class CarTableSeeder extends Seeder
 
         Car::create([
         	'vin' => 'f832q8dj23jj2io3',
-        	'username' => 'sl597',
         	'year' => '2012',
         	'make' => 'honda',
         	'model' => 'civic',
