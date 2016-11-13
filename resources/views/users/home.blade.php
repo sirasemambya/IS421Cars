@@ -128,6 +128,8 @@
         @include('admin.users')
     @endrole
 
+    @role('salesPerson')
+        you are sales
 	<br>
 
 	<h4>Sales</h4>
@@ -157,6 +159,7 @@
 			@endforeach
 		</tbody>
 	</table>
+    @endrole
 <div class="card-deck-wrapper">
 		<div class="card-deck">
 			<div class="card">
