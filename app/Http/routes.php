@@ -21,7 +21,7 @@ Route::get('/','PagesController@welcome');
 	Route::resource('users', 'UsersController', ['only' => ['create', 'store']]);
 	Route::get('/new-sales', ['as' => 'sales', 'uses' => 'SalesController@create']);
 	Route::resource('sales', 'SalesController', ['only' => ['create', 'store']]);
-	Route::get('/inventory','PagesController@inventory');
+	Route::get('/inventory','CarsController@index');
 	Route::get('/schedule','PagesController@schedule');
 	Route::get('/contact','PagesController@contact');
 	Route::get('/about','PagesController@about');
