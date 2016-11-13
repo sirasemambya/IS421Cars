@@ -9,4 +9,7 @@ class Car extends Model
     public $primaryKey = 'vin';
     public $incrementing = false;
 
+    protected $fillable = [
+        'vin', 'year', 'make', 'model', 'saleStatus'
+    ];
 }
