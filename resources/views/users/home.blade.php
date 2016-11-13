@@ -129,7 +129,7 @@
     @endrole
 
     @role('salesPerson')
-        you are sales
+        {{ link_to_route('createCar', 'Add Car to Inventory') }}
 	<br>
 
 	<h4>Sales</h4>
