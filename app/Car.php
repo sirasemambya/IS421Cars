@@ -12,4 +12,6 @@ class Car extends Model
     protected $fillable = [
         'vin', 'year', 'make', 'model', 'saleStatus'
     ];
+
+    protected $hidden = ['created_at', 'updated_at'];
 }
