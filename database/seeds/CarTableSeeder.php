@@ -18,6 +18,7 @@ class CarTableSeeder extends Seeder
         	'make' => 'ford',
         	'model' => 'focus',
         	'saleStatus' => 'pending',
+            'price' => '3500'
         	]);
 
         Car::create([
@@ -26,6 +27,7 @@ class CarTableSeeder extends Seeder
         	'make' => 'honda',
         	'model' => 'civic',
         	'saleStatus' => 'sold',
+            'price' => '9000'
         	]);        
     }
 }
