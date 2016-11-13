@@ -17,7 +17,7 @@ class CreateCarsTable extends Migration
             $table->string('year');
             $table->string('make');
             $table->string('model');
-            $table->string('saleStatus');
+            $table->string('saleStatus')->default('sale');
             $table->timestamps();
         });
 
