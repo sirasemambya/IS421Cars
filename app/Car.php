@@ -10,7 +10,7 @@ class Car extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'vin', 'year', 'make', 'model', 'saleStatus'
+        'vin', 'year', 'make', 'model', 'saleStatus', 'price'
     ];
 
     protected $hidden = ['created_at', 'updated_at'];
