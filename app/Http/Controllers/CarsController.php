@@ -26,7 +26,8 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //
+        //TODO
+        //create form for add new car(saleperson role ONLY!)
     }
 
     /**
@@ -37,7 +38,18 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, Car::$create_validation_rules);
+
+        $data = $request->only('vin', 'year', 'make', 'model', 'price');
+
+        $car = Car::create($data);
+
+        if($car)
+        {
+            //redirect somewhere DON'T KNOW YET
+        }
+        //STILL NEED THE NEW CAR FORM
+        return back()->withInput(); 
     }
 
     /**
