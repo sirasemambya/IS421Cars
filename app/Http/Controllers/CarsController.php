@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Car;
 
 class CarsController extends Controller
 {
@@ -15,7 +16,7 @@ class CarsController extends Controller
      */
     public function index()
     {
-        return 'test';
+        return view('inventory')->with('cars', Car::all());
     }
 
     /**
