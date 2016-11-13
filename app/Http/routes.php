@@ -26,7 +26,7 @@ Route::get('/new-sales', ['as' => 'sales', 'uses' => 'SalesController@create']);
 Route::resource('sales', 'SalesController', ['only' => ['create', 'store']]);
 
 /*** Car Routes ***/
-Route::get('/car/create', ['as' => 'createCar', 'uses' => 'CarsController@create']);
+Route::resource('cars', 'CarsController');
 Route::get('/inventory','CarsController@index');
 	
 /*** Static Page Routes ***/

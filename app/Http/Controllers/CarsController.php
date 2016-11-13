@@ -53,9 +53,8 @@ class CarsController extends Controller
 
         if($car)
         {
-            //redirect somewhere DON'T KNOW YET
+            return back()->with('success', ['Car added to Inventory']);
         }
-        //STILL NEED THE NEW CAR FORM
         return back()->withInput(); 
     }
 
