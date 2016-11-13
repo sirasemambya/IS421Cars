@@ -14,4 +14,12 @@ class Car extends Model
     ];
 
     protected $hidden = ['created_at', 'updated_at'];
+
+    public static $create_validation_rules = [
+        'vin' => 'required|unique:cars',
+        'year' => 'required',
+        'make' => 'required',
+        'model' => 'required',
+        'price' => 'required'
+    ]; 
 }
