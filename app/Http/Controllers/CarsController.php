@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Car;
+use Entrust;
+use Redirect;
 
 class CarsController extends Controller
 {
@@ -26,8 +28,13 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //TODO
-        //create form for add new car(saleperson role ONLY!)
+
+        if(Entrust::hasRole('salesPerson'))
+        {
+            return view('cars.create');
+        }
+
+        return Redirect::to('/');
     }
 
     /**
